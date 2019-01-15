@@ -1,0 +1,1057 @@
+
+@article{fernando_pathnet:_2017,
+	title = {{PathNet}: {Evolution} {Channels} {Gradient} {Descent} in {Super} {Neural} {Networks}},
+	shorttitle = {{PathNet}},
+	url = {http://arxiv.org/abs/1701.08734},
+	abstract = {For artiﬁcial general intelligence (AGI) it would be eﬃcient if multiple users trained the same giant neural network, permitting parameter reuse, without catastrophic forgetting. PathNet is a ﬁrst step in this direction. It is a neural network algorithm that uses agents embedded in the neural network whose task is to discover which parts of the network to re-use for new tasks. Agents are pathways (views) through the network which determine the subset of parameters that are used and updated by the forwards and backwards passes of the backpropogation algorithm. During learning, a tournament selection genetic algorithm is used to select pathways through the neural network for replication and mutation. Pathway ﬁtness is the performance of that pathway measured according to a cost function. We demonstrate successful transfer learning; ﬁxing the parameters along a path learned on task A and re-evolving a new population of paths for task B, allows task B to be learned faster than it could be learned from scratch or after ﬁne-tuning. Paths evolved on task B re-use parts of the optimal path evolved on task A. Positive transfer was demonstrated for binary MNIST, CIFAR, and SVHN supervised learning classiﬁcation tasks, and a set of Atari and Labyrinth reinforcement learning tasks, suggesting PathNets have general applicability for neural network training. Finally, PathNet also significantly improves the robustness to hyperparameter choices of a parallel asynchronous reinforcement learning algorithm (A3C).},
+	language = {en},
+	urldate = {2018-07-28},
+	journal = {arXiv:1701.08734 [cs]},
+	author = {Fernando, Chrisantha and Banarse, Dylan and Blundell, Charles and Zwols, Yori and Ha, David and Rusu, Andrei A. and Pritzel, Alexander and Wierstra, Daan},
+	month = jan,
+	year = {2017},
+	note = {arXiv: 1701.08734},
+	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+	file = {Fernando et al. - 2017 - PathNet Evolution Channels Gradient Descent in Su.pdf:files/118/Fernando et al. - 2017 - PathNet Evolution Channels Gradient Descent in Su.pdf:application/pdf}
+}
+
+@article{bengio_estimating_2013,
+	title = {Estimating or {Propagating} {Gradients} {Through} {Stochastic} {Neurons} for {Conditional} {Computation}},
+	url = {http://arxiv.org/abs/1308.3432},
+	abstract = {Stochastic neurons and hard non-linearities can be useful for a number of reasons in deep learning models, but in many cases they pose a challenging problem: how to estimate the gradient of a loss function with respect to the input of such stochastic or non-smooth neurons? I.e., can we “back-propagate” through these stochastic neurons? We examine this question, existing approaches, and compare four families of solutions, applicable in different settings. One of them is the minimum variance unbiased gradient estimator for stochatic binary neurons (a special case of the REINFORCE algorithm). A second approach, introduced here, decomposes the operation of a binary stochastic neuron into a stochastic binary part and a smooth differentiable part, which approximates the expected effect of the pure stochatic binary neuron to ﬁrst order. A third approach involves the injection of additive or multiplicative noise in a computational graph that is otherwise differentiable. A fourth approach heuristically copies the gradient with respect to the stochastic output directly as an estimator of the gradient with respect to the sigmoid argument (we call this the straight-through estimator). To explore a context where these estimators are useful, we consider a small-scale version of conditional computation, where sparse stochastic units form a distributed representation of gaters that can turn off in combinatorially many ways large chunks of the computation performed in the rest of the neural network. In this case, it is important that the gating units produce an actual 0 most of the time. The resulting sparsity can be potentially be exploited to greatly reduce the computational cost of large deep networks for which conditional computation would be useful.},
+	language = {en},
+	urldate = {2018-07-28},
+	journal = {arXiv:1308.3432 [cs]},
+	author = {Bengio, Yoshua and Léonard, Nicholas and Courville, Aaron},
+	month = aug,
+	year = {2013},
+	note = {arXiv: 1308.3432},
+	keywords = {Computer Science - Machine Learning},
+	file = {Bengio et al. - 2013 - Estimating or Propagating Gradients Through Stocha.pdf:files/92/Bengio et al. - 2013 - Estimating or Propagating Gradients Through Stocha.pdf:application/pdf}
+}
+
+@article{shazeer_outrageously_2017,
+	title = {Outrageously {Large} {Neural} {Networks}: {The} {Sparsely}-{Gated} {Mixture}-of-{Experts} {Layer}},
+	shorttitle = {Outrageously {Large} {Neural} {Networks}},
+	url = {http://arxiv.org/abs/1701.06538},
+	abstract = {The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically increasing model capacity without a proportional increase in computation. In practice, however, there are signiﬁcant algorithmic and performance challenges. In this work, we address these challenges and ﬁnally realize the promise of conditional computation, achieving greater than 1000x improvements in model capacity with only minor losses in computational efﬁciency on modern GPU clusters. We introduce a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to thousands of feed-forward sub-networks. A trainable gating network determines a sparse combination of these experts to use for each example. We apply the MoE to the tasks of language modeling and machine translation, where model capacity is critical for absorbing the vast quantities of knowledge available in the training corpora. We present model architectures in which a MoE with up to 137 billion parameters is applied convolutionally between stacked LSTM layers. On large language modeling and machine translation benchmarks, these models achieve signiﬁcantly better results than state-of-the-art at lower computational cost.},
+	language = {en},
+	urldate = {2018-08-17},
+	journal = {arXiv:1701.06538 [cs, stat]},
+	author = {Shazeer, Noam and Mirhoseini, Azalia and Maziarz, Krzysztof and Davis, Andy and Le, Quoc and Hinton, Geoffrey and Dean, Jeff},
+	month = jan,
+	year = {2017},
+	note = {arXiv: 1701.06538},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Computation and Language, Computer Science - Neural and Evolutionary Computing},
+	file = {Shazeer et al. - 2017 - Outrageously Large Neural Networks The Sparsely-G.pdf:files/347/Shazeer et al. - 2017 - Outrageously Large Neural Networks The Sparsely-G.pdf:application/pdf}
+}
+
+@article{kirsch_modular_2018,
+	title = {Modular {Networks}: {Learning} to {Decompose} {Neural} {Computation}},
+	journal = {Submitted to Neural Information Processing Systems},
+	author = {Kirsch, Louis},
+	year = {2018},
+	file = {Modular_Networks_NIPS_18.pdf:files/139/Modular_Networks_NIPS_18.pdf:application/pdf}
+}
+
+@inproceedings{bengio_deep_2013,
+	title = {Deep learning of representations: {Looking} forward},
+	booktitle = {International {Conference} on {Statistical} {Language} and {Speech} {Processing}},
+	author = {Bengio, Yoshua},
+	year = {2013},
+	note = {Citation Key: bengio2013deep 
+bibtex[organization=Springer]},
+	pages = {1--37},
+	file = {Bengio - 2013 - Deep learning of representations Looking forward.pdf:files/413/Bengio - 2013 - Deep learning of representations Looking forward.pdf:application/pdf}
+}
+
+@article{collobert_scaling_2003,
+	title = {Scaling {Large} {Learning} {Problems} with {Hard} {Parallel} {Mixtures}},
+	volume = {17},
+	language = {en},
+	number = {03},
+	journal = {International Journal of pattern recognition and artificial intelligence},
+	author = {Collobert, Ronan and Bengio, Yoshua and Bengio, Samy},
+	year = {2003},
+	pages = {349--365},
+	file = {Collobert et al. - 2003 - Scaling Large Learning Problems with Hard Parallel.pdf:files/417/Collobert et al. - 2003 - Scaling Large Learning Problems with Hard Parallel.pdf:application/pdf}
+}
+
+@article{bengio_conditional_2015,
+	title = {Conditional computation in neural networks for faster models},
+	journal = {arXiv preprint arXiv:1511.06297},
+	author = {Bengio, Emmanuel and Bacon, Pierre-Luc and Pineau, Joelle and Precup, Doina},
+	year = {2015},
+	note = {Citation Key: bengio2015conditional},
+	file = {Bengio et al. - 2015 - Conditional computation in neural networks for fas.pdf:files/423/Bengio et al. - 2015 - Conditional computation in neural networks for fas.pdf:application/pdf}
+}
+
+@inproceedings{wu_blockdrop:_2018,
+	title = {Blockdrop: {Dynamic} inference paths in residual networks},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Wu, Zuxuan and Nagarajan, Tushar and Kumar, Abhishek and Rennie, Steven and Davis, Larry S and Grauman, Kristen and Feris, Rogerio},
+	year = {2018},
+	note = {Citation Key: wu2018blockdrop},
+	pages = {8817--8826},
+	file = {Wu et al. - 2018 - Blockdrop Dynamic inference paths in residual net.pdf:files/426/Wu et al. - 2018 - Blockdrop Dynamic inference paths in residual net.pdf:application/pdf}
+}
+
+@article{liu_dynamic_2017,
+	title = {Dynamic deep neural networks: {Optimizing} accuracy-efficiency trade-offs by selective execution},
+	journal = {arXiv preprint arXiv:1701.00299},
+	author = {Liu, Lanlan and Deng, Jia},
+	year = {2017},
+	note = {Citation Key: liu2017dynamic}
+}
+
+@article{gelman_r-squared_2018,
+	title = {R-squared for {Bayesian} regression models},
+	number = {just-accepted},
+	journal = {The American Statistician},
+	author = {Gelman, Andrew and Goodrich, Ben and Gabry, Jonah and Vehtari, Aki},
+	year = {2018},
+	note = {Citation Key: gelman2018r 
+bibtex*[publisher=Taylor \& Francis]},
+	pages = {1--6},
+	file = {Gelman et al. - 2018 - R-squared for Bayesian regression models.pdf:files/564/Gelman et al. - 2018 - R-squared for Bayesian regression models.pdf:application/pdf}
+}
+
+@article{gelman_why_2018,
+	title = {Why high-order polynomials should not be used in regression discontinuity designs},
+	journal = {Journal of Business \& Economic Statistics},
+	author = {Gelman, Andrew and Imbens, Guido},
+	year = {2018},
+	note = {Citation Key: gelman2018high 
+bibtex*[publisher=Taylor \& Francis]},
+	pages = {1--10},
+	file = {Gelman and Imbens - 2018 - Why high-order polynomials should not be used in r.pdf:files/568/Gelman and Imbens - 2018 - Why high-order polynomials should not be used in r.pdf:application/pdf}
+}
+
+@article{vehtari_practical_2017,
+	title = {Practical {Bayesian} model evaluation using leave-one-out cross-validation and {WAIC}},
+	volume = {27},
+	number = {5},
+	journal = {Statistics and Computing},
+	author = {Vehtari, Aki and Gelman, Andrew and Gabry, Jonah},
+	year = {2017},
+	note = {Citation Key: vehtari2017practical 
+bibtex*[publisher=Springer]},
+	pages = {1413--1432},
+	file = {Vehtari et al. - 2017 - Practical Bayesian model evaluation using leave-on.pdf:files/563/Vehtari et al. - 2017 - Practical Bayesian model evaluation using leave-on.pdf:application/pdf}
+}
+
+@article{kucukelbir_automatic_2017,
+	title = {Automatic differentiation variational inference},
+	volume = {18},
+	number = {1},
+	journal = {The Journal of Machine Learning Research},
+	author = {Kucukelbir, Alp and Tran, Dustin and Ranganath, Rajesh and Gelman, Andrew and Blei, David M},
+	year = {2017},
+	note = {Citation Key: kucukelbir2017automatic 
+bibtex*[publisher=JMLR. org]},
+	pages = {430--474},
+	file = {Kucukelbir et al. - 2017 - Automatic differentiation variational inference.pdf:files/561/Kucukelbir et al. - 2017 - Automatic differentiation variational inference.pdf:application/pdf}
+}
+
+@article{gelman_expectation_2014,
+	title = {Expectation propagation as a way of life},
+	journal = {arXiv preprint arXiv:1412.4869},
+	author = {Gelman, Andrew and Vehtari, Aki and Jylänki, Pasi and Robert, Christian and Chopin, Nicolas and Cunningham, John P},
+	year = {2014},
+	note = {Citation Key: gelman2014expectation},
+	file = {Gelman et al. - 2014 - Expectation propagation as a way of life.pdf:files/562/Gelman et al. - 2014 - Expectation propagation as a way of life.pdf:application/pdf}
+}
+
+@article{gelman_understanding_2014,
+	title = {Understanding predictive information criteria for {Bayesian} models},
+	volume = {24},
+	number = {6},
+	journal = {Statistics and computing},
+	author = {Gelman, Andrew and Hwang, Jessica and Vehtari, Aki},
+	year = {2014},
+	note = {Citation Key: gelman2014understanding 
+bibtex*[publisher=Springer]},
+	pages = {997--1016},
+	file = {Gelman et al. - 2014 - Understanding predictive information criteria for .pdf:files/569/Gelman et al. - 2014 - Understanding predictive information criteria for .pdf:application/pdf}
+}
+
+@article{hoffman_no-u-turn_2014,
+	title = {The {No}-{U}-turn sampler: adaptively setting path lengths in {Hamiltonian} {Monte} {Carlo}.},
+	volume = {15},
+	number = {1},
+	journal = {Journal of Machine Learning Research},
+	author = {Hoffman, Matthew D and Gelman, Andrew},
+	year = {2014},
+	note = {Citation Key: hoffman2014no},
+	pages = {1593--1623},
+	file = {Hoffman and Gelman - 2014 - The No-U-turn sampler adaptively setting path len.pdf:files/567/Hoffman and Gelman - 2014 - The No-U-turn sampler adaptively setting path len.pdf:application/pdf}
+}
+
+@article{bousquet_stability_2002,
+	title = {Stability and generalization},
+	volume = {2},
+	number = {Mar},
+	journal = {Journal of machine learning research},
+	author = {Bousquet, Olivier and Elisseeff, André},
+	year = {2002},
+	note = {Citation Key: bousquet2002stability},
+	pages = {499--526},
+	file = {Bousquet and Elisseeff - 2002 - Stability and generalization.pdf:files/572/Bousquet and Elisseeff - 2002 - Stability and generalization.pdf:application/pdf}
+}
+
+@article{bartlett_rademacher_2002,
+	title = {Rademacher and {Gaussian} complexities: {Risk} bounds and structural results},
+	volume = {3},
+	number = {Nov},
+	journal = {Journal of Machine Learning Research},
+	author = {Bartlett, Peter L and Mendelson, Shahar},
+	year = {2002},
+	note = {Citation Key: bartlett2002rademacher},
+	pages = {463--482},
+	file = {Bartlett and Mendelson - 2002 - Rademacher and Gaussian complexities Risk bounds .pdf:files/573/Bartlett and Mendelson - 2002 - Rademacher and Gaussian complexities Risk bounds .pdf:application/pdf}
+}
+
+@inproceedings{zamir_taskonomy:_2018,
+	title = {Taskonomy: {Disentangling} task transfer learning},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Zamir, Amir R and Sax, Alexander and Shen, William and Guibas, Leonidas J and Malik, Jitendra and Savarese, Silvio},
+	year = {2018},
+	note = {Citation Key: zamir2018taskonomy},
+	pages = {3712--3722},
+	file = {Zamir et al. - 2018 - Taskonomy Disentangling task transfer learning.pdf:files/602/Zamir et al. - 2018 - Taskonomy Disentangling task transfer learning.pdf:application/pdf}
+}
+
+@inproceedings{shrivastava_learning_2017,
+	title = {Learning from simulated and unsupervised images through adversarial training},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Shrivastava, Ashish and Pfister, Tomas and Tuzel, Oncel and Susskind, Joshua and Wang, Wenda and Webb, Russell},
+	year = {2017},
+	note = {Citation Key: shrivastava2017learning},
+	pages = {2107--2116},
+	file = {Shrivastava et al. - 2017 - Learning from simulated and unsupervised images th.pdf:files/597/Shrivastava et al. - 2017 - Learning from simulated and unsupervised images th.pdf:application/pdf}
+}
+
+@inproceedings{huang_densely_2017,
+	title = {Densely connected convolutional networks},
+	booktitle = {Proceedings of the {IEEE} conference on computer vision and pattern recognition},
+	author = {Huang, Gao and Liu, Zhuang and Van Der Maaten, Laurens and Weinberger, Kilian Q},
+	year = {2017},
+	note = {Citation Key: huang2017densely},
+	pages = {4700--4708},
+	file = {Huang et al. - 2017 - Densely connected convolutional networks.pdf:files/593/Huang et al. - 2017 - Densely connected convolutional networks.pdf:application/pdf}
+}
+
+@article{zhang_beyond_2017,
+	title = {Beyond a gaussian denoiser: {Residual} learning of deep cnn for image denoising},
+	volume = {26},
+	number = {7},
+	journal = {IEEE Transactions on Image Processing},
+	author = {Zhang, Kai and Zuo, Wangmeng and Chen, Yunjin and Meng, Deyu and Zhang, Lei},
+	year = {2017},
+	note = {Citation Key: zhang2017beyond 
+bibtex*[publisher=IEEE]},
+	pages = {3142--3155},
+	file = {Zhang et al. - 2017 - Beyond a gaussian denoiser Residual learning of d.pdf:files/591/Zhang et al. - 2017 - Beyond a gaussian denoiser Residual learning of d.pdf:application/pdf}
+}
+
+@inproceedings{newcombe_dynamicfusion:_2015,
+	title = {Dynamicfusion: {Reconstruction} and tracking of non-rigid scenes in real-time},
+	booktitle = {Proceedings of the {IEEE} conference on computer vision and pattern recognition},
+	author = {Newcombe, Richard A and Fox, Dieter and Seitz, Steven M},
+	year = {2015},
+	note = {Citation Key: newcombe2015dynamicfusion},
+	pages = {343--352},
+	file = {Newcombe et al. - 2015 - Dynamicfusion Reconstruction and tracking of non-.pdf:files/594/Newcombe et al. - 2015 - Dynamicfusion Reconstruction and tracking of non-.pdf:application/pdf}
+}
+
+@inproceedings{zanfir_deep_2018,
+	title = {Deep {Learning} of {Graph} {Matching}},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Zanfir, Andrei and Sminchisescu, Cristian},
+	year = {2018},
+	note = {Citation Key: zanfir2018deep},
+	pages = {2684--2693},
+	file = {Zanfir and Sminchisescu - 2018 - Deep Learning of Graph Matching.pdf:files/592/Zanfir and Sminchisescu - 2018 - Deep Learning of Graph Matching.pdf:application/pdf}
+}
+
+@inproceedings{su_splatnet:_2018,
+	title = {Splatnet: {Sparse} lattice networks for point cloud processing},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Su, Hang and Jampani, Varun and Sun, Deqing and Maji, Subhransu and Kalogerakis, Evangelos and Yang, Ming-Hsuan and Kautz, Jan},
+	year = {2018},
+	note = {Citation Key: su2018splatnet},
+	pages = {2530--2539},
+	file = {Su et al. - 2018 - Splatnet Sparse lattice networks for point cloud .pdf:files/600/Su et al. - 2018 - Splatnet Sparse lattice networks for point cloud .pdf:application/pdf}
+}
+
+@inproceedings{mohapatra_efficient_2018,
+	title = {Efficient optimization for rank-based loss functions},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Mohapatra, Pritish and Rolinek, Michal and Jawahar, CV and Kolmogorov, Vladimir and Pawan Kumar, M},
+	year = {2018},
+	note = {Citation Key: mohapatra2018efficient},
+	pages = {3693--3701},
+	file = {Mohapatra et al. - 2018 - Efficient optimization for rank-based loss functio.pdf:files/596/Mohapatra et al. - 2018 - Efficient optimization for rank-based loss functio.pdf:application/pdf}
+}
+
+@article{bloesch_codeslam-learning_2018,
+	title = {{CodeSLAM}-{Learning} a {Compact}, {Optimisable} {Representation} for {Dense} {Visual} {SLAM}},
+	journal = {arXiv preprint arXiv:1804.00874},
+	author = {Bloesch, Michael and Czarnowski, Jan and Clark, Ronald and Leutenegger, Stefan and Davison, Andrew J},
+	year = {2018},
+	note = {Citation Key: bloesch2018codeslam},
+	file = {Bloesch et al. - 2018 - CodeSLAM-Learning a Compact, Optimisable Represent.pdf:files/590/Bloesch et al. - 2018 - CodeSLAM-Learning a Compact, Optimisable Represent.pdf:application/pdf}
+}
+
+@article{redmon_yolo9000:_2017,
+	title = {{YOLO}9000: better, faster, stronger},
+	journal = {arXiv preprint},
+	author = {Redmon, Joseph and Farhadi, Ali},
+	year = {2017},
+	note = {Citation Key: redmon2017yolo9000},
+	file = {Redmon and Farhadi - 2017 - YOLO9000 better, faster, stronger.pdf:files/603/Redmon and Farhadi - 2017 - YOLO9000 better, faster, stronger.pdf:application/pdf}
+}
+
+@inproceedings{castrejon_annotating_2017,
+	title = {Annotating object instances with a polygon-rnn},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Castrejon, Lluis and Kundu, Kaustav and Urtasun, Raquel and Fidler, Sanja},
+	year = {2017},
+	note = {Citation Key: castrejon2017annotating},
+	pages = {5230--5238},
+	file = {Castrejon et al. - 2017 - Annotating object instances with a polygon-rnn.pdf:files/589/Castrejon et al. - 2017 - Annotating object instances with a polygon-rnn.pdf:application/pdf}
+}
+
+@inproceedings{mollenhoff_sublabel-accurate_2016,
+	title = {Sublabel-accurate relaxation of nonconvex energies},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Mollenhoff, Thomas and Laude, Emanuel and Moeller, Michael and Lellmann, Jan and Cremers, Daniel},
+	year = {2016},
+	note = {Citation Key: mollenhoff2016sublabel},
+	pages = {3948--3956},
+	file = {Mollenhoff et al. - 2016 - Sublabel-accurate relaxation of nonconvex energies.pdf:files/601/Mollenhoff et al. - 2016 - Sublabel-accurate relaxation of nonconvex energies.pdf:application/pdf}
+}
+
+@article{badrinarayanan_segnet:_2015,
+	title = {Segnet: {A} deep convolutional encoder-decoder architecture for image segmentation},
+	journal = {arXiv preprint arXiv:1511.00561},
+	author = {Badrinarayanan, Vijay and Kendall, Alex and Cipolla, Roberto},
+	year = {2015},
+	note = {Citation Key: badrinarayanan2015segnet},
+	file = {Badrinarayanan et al. - 2015 - Segnet A deep convolutional encoder-decoder archi.pdf:files/599/Badrinarayanan et al. - 2015 - Segnet A deep convolutional encoder-decoder archi.pdf:application/pdf}
+}
+
+@inproceedings{kulkarni_picture:_2015,
+	title = {Picture: {A} probabilistic programming language for scene perception},
+	booktitle = {Proceedings of the ieee conference on computer vision and pattern recognition},
+	author = {Kulkarni, Tejas D and Kohli, Pushmeet and Tenenbaum, Joshua B and Mansinghka, Vikash},
+	year = {2015},
+	note = {Citation Key: kulkarni2015picture},
+	pages = {4390--4399},
+	file = {Kulkarni et al. - 2015 - Picture A probabilistic programming language for .pdf:files/598/Kulkarni et al. - 2015 - Picture A probabilistic programming language for .pdf:application/pdf}
+}
+
+@inproceedings{chin_efficient_2015,
+	title = {Efficient globally optimal consensus maximisation with tree search},
+	booktitle = {Proceedings of the {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition}},
+	author = {Chin, Tat-Jun and Purkait, Pulak and Eriksson, Anders and Suter, David},
+	year = {2015},
+	note = {Citation Key: chin2015efficient},
+	pages = {2413--2421},
+	file = {Chin et al. - 2015 - Efficient globally optimal consensus maximisation .pdf:files/595/Chin et al. - 2015 - Efficient globally optimal consensus maximisation .pdf:application/pdf}
+}
+
+@inproceedings{saleh_effective_2018,
+	title = {Effective use of synthetic data for urban scene semantic segmentation},
+	booktitle = {European {Conference} on {Computer} {Vision}},
+	author = {Saleh, Fatemeh Sadat and Aliakbarian, Mohammad Sadegh and Salzmann, Mathieu and Petersson, Lars and Alvarez, Jose M},
+	year = {2018},
+	note = {Citation Key: saleh2018effective 
+bibtex*[organization=Springer]},
+	pages = {86--103},
+	file = {Saleh et al. - 2018 - Effective use of synthetic data for urban scene se.pdf:files/619/Saleh et al. - 2018 - Effective use of synthetic data for urban scene se.pdf:application/pdf}
+}
+
+@inproceedings{sabour_dynamic_2017,
+	title = {Dynamic routing between capsules},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Sabour, Sara and Frosst, Nicholas and Hinton, Geoffrey E},
+	year = {2017},
+	note = {Citation Key: sabour2017dynamic},
+	pages = {3856--3866},
+	file = {Sabour et al. - 2017 - Dynamic routing between capsules.pdf:files/618/Sabour et al. - 2017 - Dynamic routing between capsules.pdf:application/pdf}
+}
+
+@inproceedings{he_deep_2016,
+	title = {Deep residual learning for image recognition},
+	booktitle = {Proceedings of the {IEEE} conference on computer vision and pattern recognition},
+	author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+	year = {2016},
+	note = {Citation Key: he2016deep},
+	pages = {770--778},
+	file = {He et al. - 2016 - Deep residual learning for image recognition.pdf:files/614/He et al. - 2016 - Deep residual learning for image recognition.pdf:application/pdf}
+}
+
+@inproceedings{szegedy_inception-v4_2017,
+	title = {Inception-v4, inception-resnet and the impact of residual connections on learning.},
+	volume = {4},
+	booktitle = {{AAAI}},
+	author = {Szegedy, Christian and Ioffe, Sergey and Vanhoucke, Vincent and Alemi, Alexander A},
+	year = {2017},
+	note = {Citation Key: szegedy2017inception},
+	pages = {12},
+	file = {Szegedy et al. - 2017 - Inception-v4, inception-resnet and the impact of r.pdf:files/621/Szegedy et al. - 2017 - Inception-v4, inception-resnet and the impact of r.pdf:application/pdf}
+}
+
+@inproceedings{klambauer_self-normalizing_2017,
+	title = {Self-normalizing neural networks},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Klambauer, Günter and Unterthiner, Thomas and Mayr, Andreas and Hochreiter, Sepp},
+	year = {2017},
+	note = {Citation Key: klambauer2017self},
+	pages = {971--980},
+	file = {Klambauer et al. - 2017 - Self-normalizing neural networks.pdf:files/623/Klambauer et al. - 2017 - Self-normalizing neural networks.pdf:application/pdf}
+}
+
+@inproceedings{redmon_you_2016,
+	title = {You only look once: {Unified}, real-time object detection},
+	booktitle = {Proceedings of the {IEEE} conference on computer vision and pattern recognition},
+	author = {Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+	year = {2016},
+	note = {Citation Key: redmon2016you},
+	pages = {779--788},
+	file = {Redmon et al. - 2016 - You only look once Unified, real-time object dete.pdf:files/625/Redmon et al. - 2016 - You only look once Unified, real-time object dete.pdf:application/pdf}
+}
+
+@inproceedings{goodfellow_generative_2014,
+	title = {Generative adversarial nets},
+	booktitle = {Advances in neural information processing systems},
+	author = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+	year = {2014},
+	note = {Citation Key: goodfellow2014generative},
+	pages = {2672--2680},
+	file = {Goodfellow et al. - 2014 - Generative adversarial nets.pdf:files/620/Goodfellow et al. - 2014 - Generative adversarial nets.pdf:application/pdf}
+}
+
+@inproceedings{andrychowicz_learning_2016,
+	title = {Learning to learn by gradient descent by gradient descent},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Andrychowicz, Marcin and Denil, Misha and Gomez, Sergio and Hoffman, Matthew W and Pfau, David and Schaul, Tom and Shillingford, Brendan and De Freitas, Nando},
+	year = {2016},
+	note = {Citation Key: andrychowicz2016learning},
+	pages = {3981--3989},
+	file = {Andrychowicz et al. - 2016 - Learning to learn by gradient descent by gradient .pdf:files/622/Andrychowicz et al. - 2016 - Learning to learn by gradient descent by gradient .pdf:application/pdf}
+}
+
+@article{redmon_yolo9000:_2017-1,
+	title = {{YOLO}9000: better, faster, stronger},
+	journal = {arXiv preprint},
+	author = {Redmon, Joseph and Farhadi, Ali},
+	year = {2017},
+	note = {Citation Key: redmon2017yolo9000},
+	file = {Redmon and Farhadi - 2017 - YOLO9000 better, faster, stronger.pdf:files/624/Redmon and Farhadi - 2017 - YOLO9000 better, faster, stronger.pdf:application/pdf}
+}
+
+@inproceedings{huang_densely_2017-1,
+	title = {Densely connected convolutional networks},
+	booktitle = {Proceedings of the {IEEE} conference on computer vision and pattern recognition},
+	author = {Huang, Gao and Liu, Zhuang and Van Der Maaten, Laurens and Weinberger, Kilian Q},
+	year = {2017},
+	note = {Citation Key: huang2017densely},
+	pages = {4700--4708},
+	file = {Huang et al. - 2017 - Densely connected convolutional networks.pdf:files/617/Huang et al. - 2017 - Densely connected convolutional networks.pdf:application/pdf}
+}
+
+@article{bergstra_random_2012,
+	title = {Random search for hyper-parameter optimization},
+	volume = {13},
+	number = {Feb},
+	journal = {Journal of Machine Learning Research},
+	author = {Bergstra, James and Bengio, Yoshua},
+	year = {2012},
+	note = {Citation Key: bergstra2012random},
+	pages = {281--305},
+	file = {Bergstra and Bengio - 2012 - Random search for hyper-parameter optimization.pdf:files/662/Bergstra and Bengio - 2012 - Random search for hyper-parameter optimization.pdf:application/pdf}
+}
+
+@inproceedings{bergstra_algorithms_2011,
+	title = {Algorithms for hyper-parameter optimization},
+	booktitle = {Advances in neural information processing systems},
+	author = {Bergstra, James S and Bardenet, Rémi and Bengio, Yoshua and Kégl, Balázs},
+	year = {2011},
+	note = {Citation Key: bergstra2011algorithms},
+	pages = {2546--2554},
+	file = {Bergstra et al. - 2011 - Algorithms for hyper-parameter optimization.pdf:files/648/Bergstra et al. - 2011 - Algorithms for hyper-parameter optimization.pdf:application/pdf}
+}
+
+@inproceedings{schaul_no_2013,
+	title = {No more pesky learning rates},
+	booktitle = {International {Conference} on {Machine} {Learning}},
+	author = {Schaul, Tom and Zhang, Sixin and LeCun, Yann},
+	year = {2013},
+	note = {Citation Key: schaul2013no},
+	pages = {343--351},
+	file = {Schaul et al. - 2013 - No more pesky learning rates.pdf:files/660/Schaul et al. - 2013 - No more pesky learning rates.pdf:application/pdf}
+}
+
+@inproceedings{glorot_understanding_2010,
+	title = {Understanding the difficulty of training deep feedforward neural networks},
+	booktitle = {Proceedings of the thirteenth international conference on artificial intelligence and statistics},
+	author = {Glorot, Xavier and Bengio, Yoshua},
+	year = {2010},
+	note = {Citation Key: glorot2010understanding},
+	pages = {249--256},
+	file = {Glorot and Bengio - 2010 - Understanding the difficulty of training deep feed.pdf:files/664/Glorot and Bengio - 2010 - Understanding the difficulty of training deep feed.pdf:application/pdf}
+}
+
+@inproceedings{martens_deep_2010,
+	title = {Deep learning via {Hessian}-free optimization.},
+	volume = {27},
+	booktitle = {{ICML}},
+	author = {Martens, James},
+	year = {2010},
+	note = {Citation Key: martens2010deep},
+	pages = {735--742},
+	file = {Martens - 2010 - Deep learning via Hessian-free optimization..pdf:files/651/Martens - 2010 - Deep learning via Hessian-free optimization..pdf:application/pdf}
+}
+
+@inproceedings{dauphin_identifying_2014,
+	title = {Identifying and attacking the saddle point problem in high-dimensional non-convex optimization},
+	booktitle = {Advances in neural information processing systems},
+	author = {Dauphin, Yann N and Pascanu, Razvan and Gulcehre, Caglar and Cho, Kyunghyun and Ganguli, Surya and Bengio, Yoshua},
+	year = {2014},
+	note = {Citation Key: dauphin2014identifying},
+	pages = {2933--2941},
+	file = {Dauphin et al. - 2014 - Identifying and attacking the saddle point problem.pdf:files/653/Dauphin et al. - 2014 - Identifying and attacking the saddle point problem.pdf:application/pdf}
+}
+
+@inproceedings{snoek_practical_2012,
+	title = {Practical bayesian optimization of machine learning algorithms},
+	booktitle = {Advances in neural information processing systems},
+	author = {Snoek, Jasper and Larochelle, Hugo and Adams, Ryan P},
+	year = {2012},
+	note = {Citation Key: snoek2012practical},
+	pages = {2951--2959},
+	file = {Snoek et al. - 2012 - Practical bayesian optimization of machine learnin.pdf:files/661/Snoek et al. - 2012 - Practical bayesian optimization of machine learnin.pdf:application/pdf}
+}
+
+@article{salakhutdinov_learning_2015,
+	title = {Learning deep generative models},
+	volume = {2},
+	journal = {Annual Review of Statistics and Its Application},
+	author = {Salakhutdinov, Ruslan},
+	year = {2015},
+	note = {Citation Key: salakhutdinov2015learning 
+bibtex*[publisher=Annual Reviews]},
+	pages = {361--385},
+	file = {Salakhutdinov - 2015 - Learning deep generative models.pdf:files/657/Salakhutdinov - 2015 - Learning deep generative models.pdf:application/pdf}
+}
+
+@inproceedings{goodfellow_multi-prediction_2013,
+	title = {Multi-prediction deep {Boltzmann} machines},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Goodfellow, Ian and Mirza, Mehdi and Courville, Aaron and Bengio, Yoshua},
+	year = {2013},
+	note = {Citation Key: goodfellow2013multi},
+	pages = {548--556},
+	file = {Goodfellow et al. - 2013 - Multi-prediction deep Boltzmann machines.pdf:files/659/Goodfellow et al. - 2013 - Multi-prediction deep Boltzmann machines.pdf:application/pdf}
+}
+
+@inproceedings{bengio_greedy_2007,
+	title = {Greedy layer-wise training of deep networks},
+	booktitle = {Advances in neural information processing systems},
+	author = {Bengio, Yoshua and Lamblin, Pascal and Popovici, Dan and Larochelle, Hugo},
+	year = {2007},
+	note = {Citation Key: bengio2007greedy},
+	pages = {153--160},
+	file = {Bengio et al. - 2007 - Greedy layer-wise training of deep networks.pdf:files/652/Bengio et al. - 2007 - Greedy layer-wise training of deep networks.pdf:application/pdf}
+}
+
+@inproceedings{kingma_stochastic_2014,
+	title = {Stochastic gradient {VB} and the variational auto-encoder},
+	booktitle = {Second {International} {Conference} on {Learning} {Representations}, {ICLR}},
+	author = {Kingma, Diederik P and Welling, Max},
+	year = {2014},
+	note = {Citation Key: kingma2014stochastic},
+	file = {Kingma and Welling - 2014 - Stochastic gradient VB and the variational auto-en.pdf:files/663/Kingma and Welling - 2014 - Stochastic gradient VB and the variational auto-en.pdf:application/pdf}
+}
+
+@article{tomczak_improving_2016,
+	title = {Improving variational auto-encoders using householder flow},
+	journal = {arXiv preprint arXiv:1611.09630},
+	author = {Tomczak, Jakub M and Welling, Max},
+	year = {2016},
+	note = {Citation Key: tomczak2016improving},
+	file = {Tomczak and Welling - 2016 - Improving variational auto-encoders using househol.pdf:files/654/Tomczak and Welling - 2016 - Improving variational auto-encoders using househol.pdf:application/pdf}
+}
+
+@inproceedings{abbasnejad_infinite_2017,
+	title = {Infinite variational autoencoder for semi-supervised learning},
+	booktitle = {2017 {IEEE} {Conference} on {Computer} {Vision} and {Pattern} {Recognition} ({CVPR})},
+	author = {Abbasnejad, M Ehsan and Dick, Anthony and van den Hengel, Anton},
+	year = {2017},
+	note = {Citation Key: abbasnejad2017infinite 
+bibtex*[organization=IEEE]},
+	pages = {781--790},
+	file = {Abbasnejad et al. - 2017 - Infinite variational autoencoder for semi-supervis.pdf:files/655/Abbasnejad et al. - 2017 - Infinite variational autoencoder for semi-supervis.pdf:application/pdf}
+}
+
+@article{kipf_variational_2016,
+	title = {Variational graph auto-encoders},
+	journal = {arXiv preprint arXiv:1611.07308},
+	author = {Kipf, Thomas N and Welling, Max},
+	year = {2016},
+	note = {Citation Key: kipf2016variational},
+	file = {Kipf and Welling - 2016 - Variational graph auto-encoders.pdf:files/665/Kipf and Welling - 2016 - Variational graph auto-encoders.pdf:application/pdf}
+}
+
+@inproceedings{wilson_deep_2016,
+	title = {Deep kernel learning},
+	booktitle = {Artificial {Intelligence} and {Statistics}},
+	author = {Wilson, Andrew Gordon and Hu, Zhiting and Salakhutdinov, Ruslan and Xing, Eric P},
+	year = {2016},
+	note = {Citation Key: wilson2016deep},
+	pages = {370--378},
+	file = {Wilson et al. - 2016 - Deep kernel learning.pdf:files/650/Wilson et al. - 2016 - Deep kernel learning.pdf:application/pdf}
+}
+
+@article{cutajar_accelerating_nodate,
+	title = {Accelerating {Deep} {Gaussian} {Processes} {Inference} with {Arc}-{Cosine} {Kernels}},
+	author = {Cutajar, Kurt and Bonilla, Edwin V and Michiardi, Pietro and Filippone, Maurizio},
+	note = {Citation Key: cutajaraccelerating},
+	file = {Cutajar et al. - Accelerating Deep Gaussian Processes Inference wit.pdf:files/647/Cutajar et al. - Accelerating Deep Gaussian Processes Inference wit.pdf:application/pdf}
+}
+
+@inproceedings{dean_large_2012,
+	title = {Large scale distributed deep networks},
+	booktitle = {Advances in neural information processing systems},
+	author = {Dean, Jeffrey and Corrado, Greg and Monga, Rajat and Chen, Kai and Devin, Matthieu and Mao, Mark and Senior, Andrew and Tucker, Paul and Yang, Ke and Le, Quoc V and {others}},
+	year = {2012},
+	note = {Citation Key: dean2012large},
+	pages = {1223--1231},
+	file = {Dean et al. - 2012 - Large scale distributed deep networks.pdf:files/656/Dean et al. - 2012 - Large scale distributed deep networks.pdf:application/pdf}
+}
+
+@article{kingma_auto-encoding_2013,
+	title = {Auto-encoding variational bayes},
+	journal = {arXiv preprint arXiv:1312.6114},
+	author = {Kingma, Diederik P and Welling, Max},
+	year = {2013},
+	note = {Citation Key: kingma2013auto},
+	file = {Kingma and Welling - 2013 - Auto-encoding variational bayes.pdf:files/649/Kingma and Welling - 2013 - Auto-encoding variational bayes.pdf:application/pdf}
+}
+
+@article{bahdanau_neural_2015,
+	title = {Neural machine translation by jointly learning to align and translate {Proceedings} of the 3rd {International} {Conference} on {Learning} {Representations}},
+	journal = {San Diego, USA},
+	author = {Bahdanau, Dzmitry and Cho, Kyunghyun and Bengio, Yoshua},
+	year = {2015},
+	note = {Citation Key: bahdanau2015neural}
+}
+
+@article{sorokin_morphorueval-2017:_2017,
+	title = {{MorphoRuEval}-2017: an evaluation track for the automatic morphological analysis methods for {Russian}},
+	author = {Sorokin, A and Shavrina, T and Lyashevskaya, O and Bocharov, B and Alexeeva, S and Droganova, K and Fenogenova, A and Granovsky, D},
+	year = {2017},
+	note = {Citation Key: sorokin2017morphorueval},
+	file = {Sorokin et al. - 2017 - MorphoRuEval-2017 an evaluation track for the aut.pdf:files/658/Sorokin et al. - 2017 - MorphoRuEval-2017 an evaluation track for the aut.pdf:application/pdf}
+}
+
+@article{tenenbaum_global_2000,
+	title = {A global geometric framework for nonlinear dimensionality reduction},
+	volume = {290},
+	number = {5500},
+	journal = {science},
+	author = {Tenenbaum, Joshua B and De Silva, Vin and Langford, John C},
+	year = {2000},
+	note = {Citation Key: tenenbaum2000global 
+bibtex*[publisher=American Association for the Advancement of Science]},
+	pages = {2319--2323},
+	file = {Tenenbaum et al. - 2000 - A global geometric framework for nonlinear dimensi.pdf:files/678/Tenenbaum et al. - 2000 - A global geometric framework for nonlinear dimensi.pdf:application/pdf}
+}
+
+@article{steyvers_large-scale_2005,
+	title = {The large-scale structure of semantic networks: {Statistical} analyses and a model of semantic growth},
+	volume = {29},
+	number = {1},
+	journal = {Cognitive science},
+	author = {Steyvers, Mark and Tenenbaum, Joshua B},
+	year = {2005},
+	note = {Citation Key: steyvers2005large 
+bibtex*[publisher=Wiley Online Library]},
+	pages = {41--78},
+	file = {Steyvers and Tenenbaum - 2005 - The large-scale structure of semantic networks St.pdf:files/685/Steyvers and Tenenbaum - 2005 - The large-scale structure of semantic networks St.pdf:application/pdf}
+}
+
+@inproceedings{griffiths_hierarchical_2004,
+	title = {Hierarchical topic models and the nested chinese restaurant process},
+	booktitle = {Advances in neural information processing systems},
+	author = {Griffiths, Thomas L and Jordan, Michael I and Tenenbaum, Joshua B and Blei, David M},
+	year = {2004},
+	note = {Citation Key: griffiths2004hierarchical},
+	pages = {17--24},
+	file = {Griffiths et al. - 2004 - Hierarchical topic models and the nested chinese r.pdf:files/681/Griffiths et al. - 2004 - Hierarchical topic models and the nested chinese r.pdf:application/pdf}
+}
+
+@article{griffiths_topics_2007,
+	title = {Topics in semantic representation.},
+	volume = {114},
+	number = {2},
+	journal = {Psychological review},
+	author = {Griffiths, Thomas L and Steyvers, Mark and Tenenbaum, Joshua B},
+	year = {2007},
+	note = {Citation Key: griffiths2007topics 
+bibtex*[publisher=American Psychological Association]},
+	pages = {211},
+	file = {Griffiths et al. - 2007 - Topics in semantic representation..pdf:files/687/Griffiths et al. - 2007 - Topics in semantic representation..pdf:application/pdf}
+}
+
+@article{tenenbaum_theory-based_2006,
+	title = {Theory-based {Bayesian} models of inductive learning and reasoning},
+	volume = {10},
+	number = {7},
+	journal = {Trends in cognitive sciences},
+	author = {Tenenbaum, Joshua B and Griffiths, Thomas L and Kemp, Charles},
+	year = {2006},
+	note = {Citation Key: tenenbaum2006theory 
+bibtex*[publisher=Elsevier]},
+	pages = {309--318},
+	file = {Tenenbaum et al. - 2006 - Theory-based Bayesian models of inductive learning.pdf:files/686/Tenenbaum et al. - 2006 - Theory-based Bayesian models of inductive learning.pdf:application/pdf}
+}
+
+@article{goodman_church:_2012,
+	title = {Church: a language for generative models},
+	journal = {arXiv preprint arXiv:1206.3255},
+	author = {Goodman, Noah and Mansinghka, Vikash and Roy, Daniel M and Bonawitz, Keith and Tenenbaum, Joshua B},
+	year = {2012},
+	note = {Citation Key: goodman2012church},
+	file = {Goodman et al. - 2012 - Church a language for generative models.pdf:files/679/Goodman et al. - 2012 - Church a language for generative models.pdf:application/pdf}
+}
+
+@article{ren_meta-learning_2018,
+	title = {Meta-learning for semi-supervised few-shot classification},
+	journal = {arXiv preprint arXiv:1803.00676},
+	author = {Ren, Mengye and Triantafillou, Eleni and Ravi, Sachin and Snell, Jake and Swersky, Kevin and Tenenbaum, Joshua B and Larochelle, Hugo and Zemel, Richard S},
+	year = {2018},
+	note = {Citation Key: ren2018meta},
+	file = {Ren et al. - 2018 - Meta-learning for semi-supervised few-shot classif.pdf:files/684/Ren et al. - 2018 - Meta-learning for semi-supervised few-shot classif.pdf:application/pdf}
+}
+
+@inproceedings{ellis_learning_2018,
+	title = {Learning to infer graphics programs from hand-drawn images},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Ellis, Kevin and Ritchie, Daniel and Solar-Lezama, Armando and Tenenbaum, Josh},
+	year = {2018},
+	note = {Citation Key: ellis2018learning},
+	pages = {6062--6071},
+	file = {Ellis et al. - 2018 - Learning to infer graphics programs from hand-draw.pdf:files/683/Ellis et al. - 2018 - Learning to infer graphics programs from hand-draw.pdf:application/pdf}
+}
+
+@inproceedings{wu_learning_2016,
+	title = {Learning a probabilistic latent space of object shapes via 3d generative-adversarial modeling},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Wu, Jiajun and Zhang, Chengkai and Xue, Tianfan and Freeman, Bill and Tenenbaum, Josh},
+	year = {2016},
+	note = {Citation Key: wu2016learning},
+	pages = {82--90},
+	file = {Wu et al. - 2016 - Learning a probabilistic latent space of object sh.pdf:files/682/Wu et al. - 2016 - Learning a probabilistic latent space of object sh.pdf:application/pdf}
+}
+
+@inproceedings{kulkarni_hierarchical_2016,
+	title = {Hierarchical deep reinforcement learning: {Integrating} temporal abstraction and intrinsic motivation},
+	booktitle = {Advances in neural information processing systems},
+	author = {Kulkarni, Tejas D and Narasimhan, Karthik and Saeedi, Ardavan and Tenenbaum, Josh},
+	year = {2016},
+	note = {Citation Key: kulkarni2016hierarchical},
+	pages = {3675--3683},
+	file = {Kulkarni et al. - 2016 - Hierarchical deep reinforcement learning Integrat.pdf:files/680/Kulkarni et al. - 2016 - Hierarchical deep reinforcement learning Integrat.pdf:application/pdf}
+}
+
+@article{smith_dont_2017,
+	title = {Don't decay the learning rate, increase the batch size},
+	journal = {arXiv preprint arXiv:1711.00489},
+	author = {Smith, Samuel L and Kindermans, Pieter-Jan and Ying, Chris and Le, Quoc V},
+	year = {2017},
+	note = {Citation Key: smith2017don}
+}
+
+@article{kingma_adam:_2014,
+	title = {Adam: {A} method for stochastic optimization},
+	journal = {arXiv preprint arXiv:1412.6980},
+	author = {Kingma, Diederik P and Ba, Jimmy},
+	year = {2014},
+	note = {Citation Key: kingma2014adam},
+	file = {Kingma and Ba - 2014 - Adam A method for stochastic optimization.pdf:files/720/Kingma and Ba - 2014 - Adam A method for stochastic optimization.pdf:application/pdf}
+}
+
+@article{chen_neural_2018,
+	title = {Neural {Ordinary} {Differential} {Equations}},
+	journal = {arXiv preprint arXiv:1806.07366},
+	author = {Chen, Tian Qi and Rubanova, Yulia and Bettencourt, Jesse and Duvenaud, David},
+	year = {2018},
+	note = {Citation Key: chen2018neural},
+	file = {Chen et al. - 2018 - Neural Ordinary Differential Equations.pdf:files/733/Chen et al. - 2018 - Neural Ordinary Differential Equations.pdf:application/pdf}
+}
+
+@inproceedings{jitkrittum_linear-time_2017,
+	title = {A linear-time kernel goodness-of-fit test},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Jitkrittum, Wittawat and Xu, Wenkai and Szabó, Zoltán and Fukumizu, Kenji and Gretton, Arthur},
+	year = {2017},
+	note = {Citation Key: jitkrittum2017linear},
+	pages = {262--271},
+	file = {Jitkrittum et al. - 2017 - A linear-time kernel goodness-of-fit test.pdf:files/718/Jitkrittum et al. - 2017 - A linear-time kernel goodness-of-fit test.pdf:application/pdf}
+}
+
+@inproceedings{collobert_unified_2008,
+	title = {A unified architecture for natural language processing: {Deep} neural networks with multitask learning},
+	booktitle = {Proceedings of the 25th international conference on {Machine} learning},
+	author = {Collobert, Ronan and Weston, Jason},
+	year = {2008},
+	note = {Citation Key: collobert2008unified 
+bibtex*[organization=ACM]},
+	pages = {160--167},
+	file = {Collobert and Weston - 2008 - A unified architecture for natural language proces.pdf:files/719/Collobert and Weston - 2008 - A unified architecture for natural language proces.pdf:application/pdf}
+}
+
+@article{balog_lost_2017,
+	title = {Lost relatives of the {Gumbel} trick},
+	journal = {arXiv preprint arXiv:1706.04161},
+	author = {Balog, Matej and Tripuraneni, Nilesh and Ghahramani, Zoubin and Weller, Adrian},
+	year = {2017},
+	note = {Citation Key: balog2017lost},
+	file = {Balog et al. - 2017 - Lost relatives of the Gumbel trick.pdf:files/730/Balog et al. - 2017 - Lost relatives of the Gumbel trick.pdf:application/pdf}
+}
+
+@article{koh_understanding_2017,
+	title = {Understanding black-box predictions via influence functions},
+	journal = {arXiv preprint arXiv:1703.04730},
+	author = {Koh, Pang Wei and Liang, Percy},
+	year = {2017},
+	note = {Citation Key: koh2017understanding},
+	file = {Koh and Liang - 2017 - Understanding black-box predictions via influence .pdf:files/742/Koh and Liang - 2017 - Understanding black-box predictions via influence .pdf:application/pdf}
+}
+
+@article{kingma_auto-encoding_2013-1,
+	title = {Auto-encoding variational bayes},
+	journal = {arXiv preprint arXiv:1312.6114},
+	author = {Kingma, Diederik P and Welling, Max},
+	year = {2013},
+	note = {Citation Key: kingma2013auto},
+	file = {Kingma and Welling - 2013 - Auto-encoding variational bayes.pdf:files/722/Kingma and Welling - 2013 - Auto-encoding variational bayes.pdf:application/pdf}
+}
+
+@inproceedings{schlichtkrull_modeling_2018,
+	title = {Modeling relational data with graph convolutional networks},
+	booktitle = {European {Semantic} {Web} {Conference}},
+	author = {Schlichtkrull, Michael and Kipf, Thomas N and Bloem, Peter and van den Berg, Rianne and Titov, Ivan and Welling, Max},
+	year = {2018},
+	note = {Citation Key: schlichtkrull2018modeling 
+bibtex*[organization=Springer]},
+	pages = {593--607},
+	file = {Schlichtkrull et al. - 2018 - Modeling relational data with graph convolutional .pdf:files/731/Schlichtkrull et al. - 2018 - Modeling relational data with graph convolutional .pdf:application/pdf}
+}
+
+@article{shahriari_taking_2016,
+	title = {Taking the human out of the loop: {A} review of bayesian optimization},
+	volume = {104},
+	number = {1},
+	journal = {Proceedings of the IEEE},
+	author = {Shahriari, Bobak and Swersky, Kevin and Wang, Ziyu and Adams, Ryan P and De Freitas, Nando},
+	year = {2016},
+	note = {Citation Key: shahriari2016taking 
+bibtex*[publisher=IEEE]},
+	pages = {148--175},
+	file = {Shahriari et al. - 2016 - Taking the human out of the loop A review of baye.pdf:files/740/Shahriari et al. - 2016 - Taking the human out of the loop A review of baye.pdf:application/pdf}
+}
+
+@article{hubara_quantized_2016,
+	title = {Quantized neural networks: {Training} neural networks with low precision weights and activations},
+	author = {Hubara, Itay and Courbariaux, Matthieu and Soudry, Daniel and El-Yaniv, Ran and Bengio, Yoshua},
+	year = {2016},
+	note = {Citation Key: hubara2016quantized},
+	file = {Hubara et al. - 2016 - Quantized neural networks Training neural network.pdf:files/735/Hubara et al. - 2016 - Quantized neural networks Training neural network.pdf:application/pdf}
+}
+
+@article{bronstein_geometric_2017,
+	title = {Geometric deep learning: going beyond euclidean data},
+	volume = {34},
+	number = {4},
+	journal = {IEEE Signal Processing Magazine},
+	author = {Bronstein, Michael M and Bruna, Joan and LeCun, Yann and Szlam, Arthur and Vandergheynst, Pierre},
+	year = {2017},
+	note = {Citation Key: bronstein2017geometric 
+bibtex*[publisher=IEEE]},
+	pages = {18--42},
+	file = {Bronstein et al. - 2017 - Geometric deep learning going beyond euclidean da.pdf:files/728/Bronstein et al. - 2017 - Geometric deep learning going beyond euclidean da.pdf:application/pdf}
+}
+
+@article{bouchard-cote_bouncy_2018,
+	title = {The bouncy particle sampler: {A} nonreversible rejection-free {Markov} chain {Monte} {Carlo} method},
+	journal = {Journal of the American Statistical Association},
+	author = {Bouchard-Côté, Alexandre and Vollmer, Sebastian J and Doucet, Arnaud},
+	year = {2018},
+	note = {Citation Key: bouchard2018bouncy 
+bibtex*[publisher=Taylor \& Francis]},
+	pages = {1--13},
+	file = {Bouchard-Côté et al. - 2018 - The bouncy particle sampler A nonreversible rejec.pdf:files/738/Bouchard-Côté et al. - 2018 - The bouncy particle sampler A nonreversible rejec.pdf:application/pdf}
+}
+
+@article{arjovsky_towards_2017,
+	title = {Towards principled methods for training generative adversarial networks},
+	journal = {arXiv preprint arXiv:1701.04862},
+	author = {Arjovsky, Martin and Bottou, Léon},
+	year = {2017},
+	note = {Citation Key: arjovsky2017towards},
+	file = {Arjovsky and Bottou - 2017 - Towards principled methods for training generative.pdf:files/741/Arjovsky and Bottou - 2017 - Towards principled methods for training generative.pdf:application/pdf}
+}
+
+@article{karpathy_unreasonable_2015,
+	title = {The unreasonable effectiveness of recurrent neural networks},
+	journal = {Andrej Karpathy blog},
+	author = {Karpathy, Andrej},
+	year = {2015},
+	note = {Citation Key: karpathy2015unreasonable}
+}
+
+@article{paisley_variational_2012,
+	title = {Variational {Bayesian} inference with stochastic search},
+	journal = {arXiv preprint arXiv:1206.6430},
+	author = {Paisley, John and Blei, David and Jordan, Michael},
+	year = {2012},
+	note = {Citation Key: paisley2012variational},
+	file = {Paisley et al. - 2012 - Variational Bayesian inference with stochastic sea.pdf:files/744/Paisley et al. - 2012 - Variational Bayesian inference with stochastic sea.pdf:application/pdf}
+}
+
+@article{graves_generating_2013,
+	title = {Generating sequences with recurrent neural networks},
+	journal = {arXiv preprint arXiv:1308.0850},
+	author = {Graves, Alex},
+	year = {2013},
+	note = {Citation Key: graves2013generating},
+	file = {Graves - 2013 - Generating sequences with recurrent neural network.pdf:files/727/Graves - 2013 - Generating sequences with recurrent neural network.pdf:application/pdf}
+}
+
+@inproceedings{kingma_semi-supervised_2014,
+	title = {Semi-supervised learning with deep generative models},
+	booktitle = {Advances in neural information processing systems},
+	author = {Kingma, Durk P and Mohamed, Shakir and Rezende, Danilo Jimenez and Welling, Max},
+	year = {2014},
+	note = {Citation Key: kingma2014semi},
+	pages = {3581--3589},
+	file = {Kingma et al. - 2014 - Semi-supervised learning with deep generative mode.pdf:files/737/Kingma et al. - 2014 - Semi-supervised learning with deep generative mode.pdf:application/pdf}
+}
+
+@inproceedings{wager_dropout_2013,
+	title = {Dropout training as adaptive regularization},
+	booktitle = {Advances in neural information processing systems},
+	author = {Wager, Stefan and Wang, Sida and Liang, Percy S},
+	year = {2013},
+	note = {Citation Key: wager2013dropout},
+	pages = {351--359}
+}
+
+@article{ioffe_batch_2015,
+	title = {Batch normalization: {Accelerating} deep network training by reducing internal covariate shift},
+	journal = {arXiv preprint arXiv:1502.03167},
+	author = {Ioffe, Sergey and Szegedy, Christian},
+	year = {2015},
+	note = {Citation Key: ioffe2015batch},
+	file = {Ioffe and Szegedy - 2015 - Batch normalization Accelerating deep network tra.pdf:files/724/Ioffe and Szegedy - 2015 - Batch normalization Accelerating deep network tra.pdf:application/pdf}
+}
+
+@inproceedings{anthony_thinking_2017,
+	title = {Thinking fast and slow with deep learning and tree search},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Anthony, Thomas and Tian, Zheng and Barber, David},
+	year = {2017},
+	note = {Citation Key: anthony2017thinking},
+	pages = {5360--5370},
+	file = {Anthony et al. - 2017 - Thinking fast and slow with deep learning and tree.pdf:files/739/Anthony et al. - 2017 - Thinking fast and slow with deep learning and tree.pdf:application/pdf}
+}
+
+@inproceedings{vaswani_attention_2017,
+	title = {Attention is all you need},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, Łukasz and Polosukhin, Illia},
+	year = {2017},
+	note = {Citation Key: vaswani2017attention},
+	pages = {5998--6008},
+	file = {Vaswani et al. - 2017 - Attention is all you need.pdf:files/721/Vaswani et al. - 2017 - Attention is all you need.pdf:application/pdf}
+}
+
+@inproceedings{li_visualizing_2018,
+	title = {Visualizing the loss landscape of neural nets},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
+	author = {Li, Hao and Xu, Zheng and Taylor, Gavin and Studer, Christoph and Goldstein, Tom},
+	year = {2018},
+	note = {Citation Key: li2018visualizing},
+	pages = {6391--6401},
+	file = {Li et al. - 2018 - Visualizing the loss landscape of neural nets.pdf:files/745/Li et al. - 2018 - Visualizing the loss landscape of neural nets.pdf:application/pdf}
+}
+
+@article{achille_emergence_2017,
+	title = {Emergence of invariance and disentangling in deep representations},
+	journal = {arXiv preprint arXiv:1706.01350},
+	author = {Achille, Alessandro and Soatto, Stefano},
+	year = {2017},
+	note = {Citation Key: achille2017emergence},
+	file = {Achille and Soatto - 2017 - Emergence of invariance and disentangling in deep .pdf:files/726/Achille and Soatto - 2017 - Emergence of invariance and disentangling in deep .pdf:application/pdf}
+}
+
+@article{shazeer_outrageously_2017-1,
+	title = {Outrageously large neural networks: {The} sparsely-gated mixture-of-experts layer},
+	journal = {arXiv preprint arXiv:1701.06538},
+	author = {Shazeer, Noam and Mirhoseini, Azalia and Maziarz, Krzysztof and Davis, Andy and Le, Quoc and Hinton, Geoffrey and Dean, Jeff},
+	year = {2017},
+	note = {Citation Key: shazeer2017outrageously},
+	file = {Shazeer et al. - 2017 - Outrageously large neural networks The sparsely-g.pdf:files/734/Shazeer et al. - 2017 - Outrageously large neural networks The sparsely-g.pdf:application/pdf}
+}
+
+@article{burda_large-scale_2018,
+	title = {Large-scale study of curiosity-driven learning},
+	journal = {arXiv preprint arXiv:1808.04355},
+	author = {Burda, Yuri and Edwards, Harri and Pathak, Deepak and Storkey, Amos and Darrell, Trevor and Efros, Alexei A},
+	year = {2018},
+	note = {Citation Key: burda2018large},
+	file = {Burda et al. - 2018 - Large-scale study of curiosity-driven learning.pdf:files/729/Burda et al. - 2018 - Large-scale study of curiosity-driven learning.pdf:application/pdf}
+}
+
+@article{bau_gan_2018,
+	title = {{GAN} {Dissection}: {Visualizing} and {Understanding} {Generative} {Adversarial} {Networks}},
+	journal = {arXiv preprint arXiv:1811.10597},
+	author = {Bau, David and Zhu, Jun-Yan and Strobelt, Hendrik and Zhou, Bolei and Tenenbaum, Joshua B and Freeman, William T and Torralba, Antonio},
+	year = {2018},
+	note = {Citation Key: bau2018gan}
+}
+
+@article{devlin_bert:_2018,
+	title = {Bert: {Pre}-training of deep bidirectional transformers for language understanding},
+	journal = {arXiv preprint arXiv:1810.04805},
+	author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+	year = {2018},
+	note = {Citation Key: devlin2018bert},
+	file = {Devlin et al. - 2018 - Bert Pre-training of deep bidirectional transform.pdf:files/725/Devlin et al. - 2018 - Bert Pre-training of deep bidirectional transform.pdf:application/pdf}
+}
+
+@article{fong_backprop_2017,
+	title = {Backprop as {Functor}: {A} compositional perspective on supervised learning},
+	journal = {arXiv preprint arXiv:1711.10455},
+	author = {Fong, Brendan and Spivak, David I and Tuyéras, Rémy},
+	year = {2017},
+	note = {Citation Key: fong2017backprop},
+	file = {Fong et al. - 2017 - Backprop as Functor A compositional perspective o.pdf:files/723/Fong et al. - 2017 - Backprop as Functor A compositional perspective o.pdf:application/pdf}
+}
+
+@article{mallat_understanding_2016,
+	title = {Understanding deep convolutional networks},
+	volume = {374},
+	number = {2065},
+	journal = {Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences},
+	author = {Mallat, Stéphane},
+	year = {2016},
+	note = {Citation Key: mallat2016understanding 
+bibtex*[publisher=The Royal Society Publishing]},
+	pages = {20150203},
+	file = {Mallat - 2016 - Understanding deep convolutional networks.pdf:files/743/Mallat - 2016 - Understanding deep convolutional networks.pdf:application/pdf}
+}
